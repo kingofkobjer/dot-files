@@ -2,10 +2,6 @@
 if [ -f /etc/bash_completion  ]; then
     source /etc/bash_completion
 fi
-# Set the PS1 prompt (with colors).
-# Based on http://www-128.ibm.com/developerworks/linux/library/l-tip-prompt/
-# And http://networking.ringofsaturn.com/Unix/Bash-prompts.php .
-PS1='"\[\e[1;34m\]\w\[\e[1;35m\]$(__git_ps1 "(%s)")\[\e[0m\]\$"'
 # Set the default editor to vim.
 export EDITOR=vim
 # Avoid succesive duplicates in the bash command history.
@@ -20,5 +16,18 @@ PROMPT_COMMAND='history -a'
 if [ -f ~/.bash_aliases  ]; then
      source ~/.bash_aliases
 fi
-#
-export PATH=~/bin:~/.local/.bin:~/Android/Sdk/platform-tools:$PATH
+
+# gitprompt configuration
+
+# Set config variables first
+GIT_PROMPT_ONLY_IN_REPO=1
+
+# GIT_PROMPT_FETCH_REMOTE_STATUS=0   # uncomment to avoid fetching remote status
+
+# GIT_PROMPT_START=...    # uncomment for custom prompt start sequence
+# GIT_PROMPT_END=...      # uncomment for custom prompt end sequence
+
+# as last entry source the gitprompt script
+# GIT_PROMPT_THEME=Custom # use custom .git-prompt-colors.sh
+GIT_PROMPT_THEME=Solarized # use theme optimized for solarized color scheme
+source ~/.bash-git-prompt/gitprompt.sh
