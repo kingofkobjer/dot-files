@@ -1,3 +1,6 @@
 [submodule "module/bash-git-prompt"]
 	path = module/bash-git-prompt
 	url = git@github.com:magicmonty/bash-git-prompt.git
+[submodule "module/spf13-vim"]
+	path = module/spf13-vim
+	url = git@github.com:spf13/spf13-vim.git
