@@ -125,12 +125,6 @@ exec xautolock -time 15 -locker '~/.local/.bin/screenlock.sh' &
 bindsym $mod+m move scratchpad
 bindsym $mod+o scratchpad show
 
-bindsym $mod+F1 exec firefox
-bindsym $mod+F2 exec keepass2
-bindsym $mod+F3 exec qxdm
-bindsym $mod+F4 exec studio.sh
-bindsym $mod+F5 exec filezilla
-
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
