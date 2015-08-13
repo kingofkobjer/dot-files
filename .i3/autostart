@@ -1,0 +1,11 @@
+#!/bin/sh
+
+~/.local/.bin/getNASAPicturesOfTheDay.sh
+feh --bg-scale ~/Pictures/apod.jpg
+
+## Disable beeps
+xset -b &
+
+## Clipboard manager
+LC_ALL=C parcellite &
+

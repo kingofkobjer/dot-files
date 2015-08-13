@@ -1,6 +1,7 @@
 if [ -f /etc/bash_completion  ]; then
     source /etc/bash_completion
 fi
+export TERMINAL=sakura
 export EDITOR=vim
 export HISTCONTROL=ignoredups
 shopt -s histappend

@@ -186,3 +186,18 @@ exec --no-startup-id feh --bg-fill ~/Pictures/AC.jpg
 
 # Custom KeyBinds
 bindsym Print exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/screenshots/'
+
+# before autostart
+exec ~/.i3/autostart
+
+# autostart
+#exec --no-startup-id i3-msg 'workspace 3; exec keepass2'
+exec google-chrome
+
+# workspace assignment (use "xprop")
+assign [class="^Google-chrome$"] 2
+assign [class="^Firefox$"] 2
+
+# custom window settings
+for_window [class="^Google-chrome$"] border none
+for_window [title="^Firefox$"] border none
