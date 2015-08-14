@@ -198,8 +198,8 @@ exec ~/.i3/autostart
 exec google-chrome
 
 # workspace assignment (use "xprop")
-assign [class="^Google-chrome$"] 2
-assign [class="^Firefox$"] 2
+assign [class="^Google-chrome$"] $tag2
+assign [class="^Firefox$"] $tag2
 
 # custom window settings
 for_window [class="^Google-chrome$"] border none
