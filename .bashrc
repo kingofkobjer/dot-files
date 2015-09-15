@@ -15,4 +15,6 @@ GIT_PROMPT_ONLY_IN_REPO=1
 # as last entry source the gitprompt script
 # GIT_PROMPT_THEME=Custom # use custom .git-prompt-colors.sh
 # GIT_PROMPT_THEME=Solarized # use theme optimized for solarized color scheme
-source ~/.bash-git-prompt/gitprompt.sh
+#source ~/.bash-git-prompt/gitprompt.sh
+
+export PS1='\[\e[1;34m\]\w\[\e[1;35m\]$(__git_ps1 "(%s)")\[\e[0m\]\$ '
