@@ -213,6 +213,10 @@ exec ~/.i3/autostart
 #exec --no-startup-id i3-msg 'workspace 3; exec keepass2'
 exec google-chrome
 
+# start networkmanager
+exec --no-startup-id nm-applet
+exec --no-startup-id dropbox start
+
 # workspace assignment (use "xprop")
 assign [class="^Google-chrome$"] $tag2
 assign [class="^Firefox$"] $tag2
