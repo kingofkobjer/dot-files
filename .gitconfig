@@ -6,8 +6,9 @@
 # Best git tutorial I've read:
 # http://newartisans.com/2008/04/git-from-the-bottom-up/
 # http://ftp.newartisans.com/pub/git.from.bottom.up.pdf
+
 [apply]
-	whitespace = fix
+  whitespace = fix
 [core]
   # Apparently git sets 'LESS=FRSX'. The 'F' means to quit if output
   # fits on one screen, the 'R' means to interpret escapes (e.g. ANSI
@@ -129,6 +130,7 @@
     # editor = emacs -nw -f text-mode
     # editor = emacs -nw --eval '(setq nc:use-flyspell nil)' -f flyspell-mode
     editor = vim
+    whitespace = trailing-space,space-before-tab,tab-in-indent
 [color]
     ui = auto
 [log]
