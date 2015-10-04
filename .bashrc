@@ -18,3 +18,10 @@ GIT_PROMPT_ONLY_IN_REPO=1
 #source ~/.bash-git-prompt/gitprompt.sh
 
 export PS1='\[\e[1;34m\]\w\[\e[1;35m\]$(__git_ps1 "(%s)")\[\e[0m\]\$ '
+
+
+# common android out dir
+ANDROID_COMMON_OUT_DIRECTORY=~/android/common-out
+if [ -d "$ANDROID_COMMON_OUT_DIRECTORY"  ]; then
+    export OUT_DIR_COMMON_BASE=$ANDROID_COMMON_OUT_DIRECTORY
+fi
