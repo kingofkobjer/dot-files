@@ -49,7 +49,7 @@
   # with good reason.  As a bonus, using this preprocessor would mean
   # that the tilde problem when using '+Gg' described above would also
   # go away.
-  pager =  less -Mi -+F
+#  pager =  less -Mi -+F
     # Line ending normalization: see
     # http://timclem.wordpress.com/2012/03/01/mind-the-end-of-your-line/
     #
