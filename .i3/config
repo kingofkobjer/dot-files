@@ -218,11 +218,11 @@ exec --no-startup-id nm-applet
 exec --no-startup-id dropbox start
 
 # workspace assignment (use "xprop")
-assign [class="^Google-chrome$"] $tag2
+assign [class="^[g,G]oogle-chrome$"] $tag2
 assign [class="^Firefox$"] $tag2
 
 # custom window settings
-for_window [class="^Google-chrome$"] border none
+for_window [class="^[g,G]oogle-chrome$"] border none
 for_window [title="^Firefox$"] border none
 
 for_window [window_role="pop-up"] floating enable
