@@ -15,7 +15,7 @@ function clean_up {
     fi
 }
 TODAY=$(date +'%Y%m%d')
-if [ ! -e ~/Pictures/${TODAY}_apod.jpg ]; then
+if [ ! -e ${HOME}/Pictures/${TODAY}_apod.jpg ]; then
     get_page
     PICURL=`/bin/cat /tmp/pic_url`
     wget --quiet $PICURL -O $PICTURES_DIR/${TODAY}_apod.jpg
