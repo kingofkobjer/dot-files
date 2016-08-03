@@ -1,6 +1,6 @@
 #!/bin/bash
 GET_DESCRIPTION="yes"
-PICTURES_DIR=~/Pictures
+PICTURES_DIR=/home/extmile/Pictures
 BACKGROUNDPICNAME=apod.jpg
 function get_page {
     wget http://apod.nasa.gov/apod/ --quiet -O /tmp/apod.html
@@ -15,7 +15,7 @@ function clean_up {
     fi
 }
 TODAY=$(date +'%Y%m%d')
-if [ ! -e ${HOME}/Pictures/${TODAY}_apod.jpg ]; then
+if [ ! -e /home/extmile/Pictures/${TODAY}_apod.jpg ]; then
     get_page
     PICURL=`/bin/cat /tmp/pic_url`
     wget --quiet $PICURL -O $PICTURES_DIR/${TODAY}_apod.jpg

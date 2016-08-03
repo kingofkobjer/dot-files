@@ -19,9 +19,19 @@ GIT_PROMPT_ONLY_IN_REPO=1
 
 export PS1='\[\e[1;34m\]\w\[\e[1;35m\]$(__git_ps1 "(%s)")\[\e[0m\]\$ '
 
+if [ -d "/media/projects/repos/polaris/development/android/prebuilts/devtools/tools"  ] ; then
+    PATH="/media/projects/repos/polaris/development/android/prebuilts/devtools/tools:$PATH"
+    export ANDROID_SWT="/home/extmile/projects/repos/polaris/sirin-development/android/prebuilts/tools/linux-x86_64/swt"
+fi
 
 # common android out dir
 ANDROID_COMMON_OUT_DIRECTORY=~/android/common-out
 if [ -d "$ANDROID_COMMON_OUT_DIRECTORY"  ]; then
     export OUT_DIR_COMMON_BASE=$ANDROID_COMMON_OUT_DIRECTORY
 fi
+
+
+export GOPATH=$HOME/projects/go/work
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
+

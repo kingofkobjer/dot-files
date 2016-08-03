@@ -8,7 +8,7 @@
 # http://ftp.newartisans.com/pub/git.from.bottom.up.pdf
 
 [apply]
-  whitespace = fix
+#  whitespace = fix
 [core]
   # Apparently git sets 'LESS=FRSX'. The 'F' means to quit if output
   # fits on one screen, the 'R' means to interpret escapes (e.g. ANSI
@@ -132,7 +132,7 @@
     editor = vim
     whitespace = trailing-space,space-before-tab,tab-in-indent
 [color]
-    ui = auto
+	ui = auto
 [log]
     # Show times in my time zone.
     #
@@ -409,10 +409,10 @@
     cl = clean -xdf
     #list commands
     le = log --oneline --decorate
-    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
-    ls1 = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
-    lds = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --graph
-    ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+    ll = log --pretty=format:"%C\\(yellow\\)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+    ls1 = log --pretty=format:"%C\\(yellow\\)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+    lds = log --pretty=format:"%C\\(yellow\\)%h\\ %C\\(green\\)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --graph
+    ls = log --pretty=format:"%C\\(green\\)%h\\ %C\\(yellow\\)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
     lc  = "!f() { git ll "$1"^.."$1"; }; f"
     lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
     #list all aliases
