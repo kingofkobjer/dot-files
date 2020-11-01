@@ -4,3 +4,6 @@
 [submodule "module/spf13-vim"]
 	path = module/spf13-vim
 	url = git@github.com:spf13/spf13-vim.git
+[submodule "module/gitalias"]
+	path = module/gitalias
+	url = https://github.com/GitAlias/gitalias.git
