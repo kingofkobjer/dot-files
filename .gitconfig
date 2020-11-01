@@ -8,14 +8,9 @@
 [merge]
     tool = emerge
     defaultToUpstream = true
-[include]
-    path = ~/projects/repos/github/gitalias/gitalias.txt
-    path = ~/.local/.gitconfig
-[alias]
-    st = status --short --branch
-    br = branch
-    cl = clean -xdf
 [push]
     default = simple
 [diff]
     noprefix = true
+[include]
+    path = module/gitalias/gitalias.txt
