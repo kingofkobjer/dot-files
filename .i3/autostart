@@ -1,6 +1,0 @@
-#!/bin/sh
-~/.local/.bin/updatebackground.sh
-## Disable beeps
-xset -b &
-## Clipboard manager
-LC_ALL=C parcellite &
