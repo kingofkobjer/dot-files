@@ -4,7 +4,7 @@
     editor = vim
     pager = "less -XF"
 [color]
-	ui = auto
+    ui = auto
 [grep]
     extendedRegexp = true
 [merge]
