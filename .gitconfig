@@ -1,3 +1,5 @@
+[include]
+    path = module/gitalias/gitalias.txt
 [core]
     editor = vim
     pager = "less -XF"
@@ -12,5 +14,6 @@
     default = simple
 [diff]
     noprefix = true
-[include]
-    path = module/gitalias/gitalias.txt
+[alias]
+    st = status --short --branch
+    br = branch
