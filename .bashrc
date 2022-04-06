@@ -128,7 +128,7 @@ function be_get_branch {
   done
 }
 
-export PS1="\[\033[96;5;2m\]\$(be_get_branch "$2")\[$(tput sgr0)\]\[\033[38;5;2m\]\A\[$(tput sgr0)\]\[\033[38;5;15m\]\n\[$(tput sgr0)\]\[\033[38;5;9m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\\$ \[$(tput sgr0)\]"
+export PS1="\[\033[96;5;2m\]\h:\$(be_get_branch "$2")\[$(tput sgr0)\]\[\033[38;5;2m\]\A\[$(tput sgr0)\]\[\033[38;5;15m\]\n\[$(tput sgr0)\]\[\033[38;5;9m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\\$ \[$(tput sgr0)\]"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
